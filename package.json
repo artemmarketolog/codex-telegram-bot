@@ -1,0 +1,19 @@
+{
+  "name": "codex-telegram-bot",
+  "version": "1.0.0",
+  "description": "Telegram-бот для Codex: чаты по проектам в темах, голосовые, файлы — с телефона.",
+  "private": true,
+  "type": "module",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning --env-file-if-exists=.env app.mjs",
+    "doctor": "node --no-warnings --env-file-if-exists=.env scripts/doctor.mjs",
+    "test": "node --no-warnings --test tests/*.test.mjs"
+  },
+  "dependencies": {
+    "ws": "^8.18.3"
+  }
+}
